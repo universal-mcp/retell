@@ -1,10 +1,10 @@
-# Retell MCP Server
+# RetellApp MCP Server
 
-An MCP Server for the Retell API.
+An MCP Server for the RetellApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Retell API.
+This is automatically generated from OpenAPI schema for the RetellApp API.
 
 
 | Tool | Description |
