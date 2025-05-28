@@ -97,7 +97,7 @@ class RetellApp(APIApplication):
             ValueError: Raised when the required 'agent_id' parameter is missing.
 
         Tags:
-            create, web-calls, api-call, important
+            create, web-calls, api-call
         """
         if agent_id is None:
             raise ValueError("Missing required parameter 'agent_id'")
@@ -127,7 +127,7 @@ class RetellApp(APIApplication):
             ValueError: Raised when the 'voice_id' parameter is missing or None.
 
         Tags:
-            retrieve, voice, important, data-fetched
+            retrieve, voice, data-fetched
         """
         if voice_id is None:
             raise ValueError("Missing required parameter 'voice_id'")
@@ -191,7 +191,7 @@ class RetellApp(APIApplication):
             HTTPError: When the API request fails with an error status code.
 
         Tags:
-            create, phone, post, communication, important
+            create, phone, post, communication
         """
         if area_code is None:
             raise ValueError("Missing required parameter 'area_code'")
@@ -223,7 +223,7 @@ class RetellApp(APIApplication):
             requests.HTTPError: If the HTTP request fails or an error response is returned from the API.
 
         Tags:
-            get, phone-number, api, lookup, important
+            get, phone-number, api, lookup
         """
         if phone_number is None:
             raise ValueError("Missing required parameter 'phone_number'")
@@ -249,7 +249,7 @@ class RetellApp(APIApplication):
             requests.HTTPError: If the HTTP request to the API fails or returns an unsuccessful status code.
 
         Tags:
-            get, list, phone-numbers, api, synchronous, important
+            get, list, phone-numbers, api, synchronous
         """
         url = f"{self.base_url}/list-phone-numbers"
         query_params = {}
@@ -308,7 +308,7 @@ class RetellApp(APIApplication):
             requests.HTTPError: If the HTTP DELETE request results in an error status code.
 
         Tags:
-            delete, phone-number, api, management, important
+            delete, phone-number, api, management
         """
         if phone_number is None:
             raise ValueError("Missing required parameter 'phone_number'")
